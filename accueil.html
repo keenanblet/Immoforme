@@ -6,17 +6,43 @@
     <title>Immoform</title>
 </head>
 <body>
-    <h1>Bienvenue sur Immoform</h1>
-    <p>Votre plateforme de formation en ligne dédiée à l'immobilier.</p>
-    <nav>
-        <ul>
-            <li><a href="formations.html">Formations</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">À propos</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+
+    
+    <form id="loginForm">
+        <h2>Connexion</h2>
+
+        <input type="email" name="email" placeholder="Adresse e-mail" required>
+        <input type="password" name="password" placeholder="Mot de passe" required>
+
+        <button type="submit">Se connecter</button>
+
+        <div class="link">
+            <a onclick="showRegister()">Créer un compte</a><br>
+            <a onclick="alert('Tu ajouteras ta page mot de passe oublié ici.')">
+                Mot de passe oublié ?
+            </a>
+        </div>
+    </form>
+
+    
+    <form id="registerForm">
+        <h2>Créer un compte</h2>
+
+        <input type="text" name="name" placeholder="Nom ou pseudo" required>
+        <input type="email" name="email" placeholder="Adresse e-mail" required>
+        <input type="password" name="password" placeholder="Mot de passe" required>
+
+        <button type="submit">Créer le compte</button>
+
+        <div class="link">
+            <a onclick="showLogin()">Déjà un compte ? Se connecter</a>
+        </div>
+    </form>
+
+</div>
     <footer>
-        <p>&copy; 2024 Immoform. Tous droits réservés.</p>
+        <p>&copy; 2025 Immoform. Tous droits réservés.</p>
     </footer>
     
 </body>
