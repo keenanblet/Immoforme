@@ -1,0 +1,74 @@
+/* 🌿 Couleurs chill */
+:root {
+    --bg: #E9E5D6;
+    --green-light: #A3B18A;
+    --green-mid: #588157;
+    --green-dark: #3A5A40;
+    --text: #2B2B2B;
+}
+
+/* Style global */
+body {
+    margin: 0;
+    background-color: var(--bg);
+    font-family: "Segoe UI", sans-serif;
+    color: var(--text);
+}
+
+/* Navbar */
+#navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+#navbar.actif {
+    display: block;
+}
+
+@media (min-width: 768px){
+    #navbar {
+        display: block;
+        position: relative;
+        padding: 10px;
+    }
+}
+
+#navbar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar > ul > li > a {
+    display: block;
+    text-align: center;
+    background: var(--green-mid);
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+#navbar > ul > li > a:hover {
+    background-color: var(--green-light);
+    color: var(--bg);
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    #navbar > ul {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+
+.btn-outline-success {
+    margin: 10px;
+}
