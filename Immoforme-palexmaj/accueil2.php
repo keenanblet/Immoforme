@@ -16,7 +16,9 @@ $token = bin2hex(random_bytes(32));
 $_SESSION['token'] = $token;
 ?>
    
-      <form class="d-flex" action="connexion.php" method="post" role="search">
+      <form class
+      
+      ="d-flex" action="connexion.php" method="post" role="search">
         <input type="email" name="email">
         <input type="password" name="password">
         <input type="hidden" name="token" value="<?php echo $token; ?>">
