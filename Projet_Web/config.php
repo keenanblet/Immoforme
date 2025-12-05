@@ -2,9 +2,9 @@
 
 class config{
     const HOST = 'localhost';
-    const DBNAME = 'immoforme';
-    const USER = 'immoforme';
-    const PASSWORD = '1234';
+    const DBNAME = 'immoforme_web';
+    const USER = 'keenan';
+    const PASSWORD = '123';
 }
 
 
