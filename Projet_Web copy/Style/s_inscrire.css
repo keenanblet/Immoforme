@@ -1,0 +1,101 @@
+:root {
+    --green-light: #A3B18A;
+    --green-mid: #588157;
+    --green-dark: #3A5A40;
+    --text: #2B2B2B;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--green-light), var(--green-mid));
+    padding-top: 120px; /* espace pour la navbar */
+}
+
+/* CONTENEUR */
+.conteneur {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+}
+
+/* TITRE */
+.titre {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* TEXTE INSCRIPTION */
+.texte-inscription {
+    font-size: 14px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #555;
+}
+
+.texte- a {
+    text-decoration: none;
+    color: var(--green-dark);
+    font-weight: bold;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column !important; /* force l’empilement vertical */
+    gap: 18px;
+    align-items: stretch;
+}
+
+/* CHAMPS */
+.champ {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.champ:focus {
+    border-color: var(--green-mid);
+    box-shadow: 0 0 6px rgba(88,129,87,0.35);
+}
+
+/* BOUTON */
+.bouton-inscription{
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    border: none;
+    background: var(--green-mid);
+    color: white;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.bouton-inscription:hover {
+    background: var(--green-dark);
+}
+
+/* MOT DE PASSE OUBLIÉ */
+.motdepasse-oublie {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    color: #3a6dd8;
+    text-decoration: none;
+}
