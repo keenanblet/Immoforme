@@ -1,0 +1,84 @@
+:root {
+    --bg: #E9E5D6;
+    --green-light: #A3B18A;
+    --green-mid: #588157;
+    --green-dark: #3A5A40;
+    --text: #2B2B2B;
+    --white: #ffffff;
+}
+
+/* ----- BODY ----- */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, var(--green-light), var(--green-mid));
+    margin: 0;
+    padding-top: 80px; /* espace pour navbar */
+}
+
+/* ----- CONTENU CENTRAL ----- */
+.contenu {
+    width: 100%;
+    margin-top: 100px; /* sous la navbar fixe */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ----- TITRE ----- */
+.titre {
+    margin: 0 auto 20px auto;
+    font-size: 2.2rem;
+    color: var(--white);
+}
+
+/* ----- TEXTE ----- */
+.texte {
+    color: var(--white);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+/* ----- BOUTONS ----- */
+.boutons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    background: var(--white);
+    color: var(--green-dark);
+    padding: 14px 28px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    transition: 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    background: var(--green-dark);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+/* ----- RESPONSIVE MOBILE ----- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .boutons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 200px;
+    }
+}
